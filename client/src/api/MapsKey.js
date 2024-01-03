@@ -1,0 +1,3 @@
+const MAPS_API_KEY = 'AIzaSyDQ_T0IBMGJKmVeSYD8BnHxIgmnkAqPM2E'
+
+export default MAPS_API_KEY
