@@ -13,7 +13,6 @@ from config import app, db, api
 from models import User, UserListing, Listing, Business
 from dotenv import load_dotenv
 import os
-import ipdb
 from datetime import datetime
 
 load_dotenv()
