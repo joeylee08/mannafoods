@@ -88,7 +88,7 @@ const FindListing = () => {
     fetch(`/ulbyuserid/${currentUser.id}`)
     .then(res => res.json())
     .then(data => {
-      data = data.filter(item => item.listing_id == listing_id)
+      data = data.filter(item => item.listing_id === listing_id)
       const target_id = data[0].id
       fetch(`/userlistingbyid/${target_id}`, {
         method: "DELETE"
