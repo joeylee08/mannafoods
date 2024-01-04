@@ -19,13 +19,6 @@ load_dotenv()
 SECRET_KEY = os.getenv('SECRET_KEY')
 app.secret_key = SECRET_KEY
 
-app = Flask(
-    __name__,
-    static_url_path='',
-    static_folder='../client/build',
-    template_folder='../client/build'
-)
-
 @app.route('/')
 @app.route('/<int:id>')
 
