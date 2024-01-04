@@ -3,7 +3,7 @@
 # Standard library imports
 
 # Remote library imports
-from flask import request, make_response, session
+from flask import Flask, request, make_response, session, render_template
 from flask_restful import Resource
 
 # Local imports
@@ -18,6 +18,19 @@ from datetime import datetime
 load_dotenv()
 SECRET_KEY = os.getenv('SECRET_KEY')
 app.secret_key = SECRET_KEY
+
+app = Flask(
+    __name__,
+    static_url_path='',
+    static_folder='../client/build',
+    template_folder='../client/build'
+)
+
+@app.route('/')
+@app.route('/<int:id>')
+
+def index(id=0):
+    return render_template("index.html")
 
 # Views go here!
 
