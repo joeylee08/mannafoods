@@ -86,9 +86,12 @@ const FindListing = () => {
     const listing_id = e.target.id
 
     fetch(`/ulbyuserid/${currentUser.id}`)
-    .then(res => res.json())
+    .then(res => {
+      if (res.status === 200) return res.json()
+      else throw Error
+    })
     .then(data => {
-      data = data.filter(item => item.listing_id === listing_id)
+      data = data.filter(item => item.listing_id == listing_id)
       const target_id = data[0].id
       fetch(`/userlistingbyid/${target_id}`, {
         method: "DELETE"

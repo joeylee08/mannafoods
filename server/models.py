@@ -10,7 +10,7 @@ class User(db.Model, SerializerMixin):
     __tablename__ = 'users'
 
     id = db.Column(db.Integer, primary_key=True)
-    login_type = db.Column(db.Integer, server_default='user')
+    login_type = db.Column(db.String, server_default='user')
     email = db.Column(db.String, nullable=False)
     username = db.Column(db.String, nullable=False)
     _password_hash = db.Column(db.String, nullable=False)
@@ -164,7 +164,7 @@ class Business(db.Model, SerializerMixin):
     __tablename__ = 'businesses'
 
     id = db.Column(db.Integer, primary_key=True)
-    login_type = db.Column(db.Integer, server_default='business')
+    login_type = db.Column(db.String, server_default='business')
     username = db.Column(db.String, nullable=False)
     business_name = db.Column(db.String)
     email = db.Column(db.String, nullable=False)

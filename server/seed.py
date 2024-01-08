@@ -199,7 +199,7 @@ def create_user_listings():
 
     ul1 = UserListing(
         user_id=1,
-        listing_id=1
+        listing_id=2
     )
     ul2 = UserListing(
         user_id=1,
@@ -255,6 +255,6 @@ if __name__ == '__main__':
     with app.app_context():
         print("Starting seed...")
         create_users()
-        create_listings()
         create_businesses()
+        create_listings()
         create_user_listings()

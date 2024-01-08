@@ -19,9 +19,15 @@ load_dotenv()
 SECRET_KEY = os.getenv('SECRET_KEY')
 app.secret_key = SECRET_KEY
 
-@app.route('/')
-@app.route('/<int:id>')
+DATABASE_URI = os.getenv('DATABASE_URI')
+app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URI
 
+@app.route('/')
+@app.route('/login')
+@app.route('/mylistings')
+@app.route('/findlisting')
+@app.route('/createlisting')
+@app.route('/account')
 def index(id=0):
     return render_template("index.html")
 

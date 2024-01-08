@@ -19,7 +19,7 @@ app = Flask(
     template_folder='../client/build'
 )
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://admin:uFEzrSvbxtb65RLAARxsMSInkLeC23St@dpg-cmagain109ks73fe1vbg-a.oregon-postgresql.render.com/mannafoods'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://admin:uFEzrSvbxtb65RLAARxsMSInkLeC23St@dpg-cmagain109ks73fe1vbg-a.oregon-postgres.render.com/mannafoods'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.json.compact = False
 
