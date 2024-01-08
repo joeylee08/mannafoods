@@ -254,7 +254,20 @@ def create_user_listings():
 if __name__ == '__main__':
     with app.app_context():
         print("Starting seed...")
+
+        db.session.query(UserListing).delete()
+        db.session.commit()
+
+        db.session.query(Listing).delete()
+        db.session.commit()
+
+        db.session.query(Business).delete()
+        db.session.commit()
+
+        db.session.query(User).delete()
+        db.session.commit()
+
         create_users()
         create_businesses()
-        create_listings()
-        create_user_listings()
+        # create_listings()
+        # create_user_listings()

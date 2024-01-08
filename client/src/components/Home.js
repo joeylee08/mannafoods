@@ -3,7 +3,7 @@ import Header from './Header'
 import { useContext, useEffect, useState } from 'react'
 import { UserContext } from '../context/UserContext'
 import UserInfo from './UserInfo'
-import Map from './Map'
+// import Map from './Map'
 
 const Home = () => {
   const { loginType, currentUser } = useContext(UserContext)
@@ -29,7 +29,8 @@ const Home = () => {
       <Header title={title}/>
       <NavBar/>
       <UserInfo />
-      <Map mapClass={'homeMap'} center={address} items={[]} />
+      <img src='/Users/josephylee/Desktop/Flatiron School/Phase 5/finalproject/mannafoods/client/athens.jpg' alt='homepage_image'></img>
+      {/* <Map mapClass={'homeMap'} center={address} items={[]} /> */}
       <div className='homeQuotes'>
         <h2 className='quote'>{quote}</h2>
         <h3 className='author'>{author}</h3>
