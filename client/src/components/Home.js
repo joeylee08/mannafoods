@@ -29,8 +29,9 @@ const Home = () => {
       <Header title={title}/>
       <NavBar/>
       
-      <img className='homeImage' src='https://github.com/joeylee08/mannafoods/blob/main/client/athens.jpg?raw=true' alt='homepage_image'></img>
+      <img className='homeImage' src='https://github.com/joeylee08/mannafoods/blob/main/athens.jpg?raw=true' alt='homepage_image'></img>
       <UserInfo />
+      <img className='homeImage' src='https://github.com/joeylee08/mannafoods/blob/main/water.jpg?raw=true' alt='homepage_image'></img>
       <div className='homeQuotes'>
         <h2 className='quote'>{quote}</h2>
         <h3 className='author'>{author}</h3>
