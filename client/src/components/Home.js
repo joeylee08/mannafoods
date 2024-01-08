@@ -28,9 +28,9 @@ const Home = () => {
     <div className='container'>
       <Header title={title}/>
       <NavBar/>
+      
+      <img className='homeImage' src='https://github.com/joeylee08/mannafoods/blob/main/client/athens.jpg?raw=true' alt='homepage_image'></img>
       <UserInfo />
-      <img src='/Users/josephylee/Desktop/Flatiron School/Phase 5/finalproject/mannafoods/client/athens.jpg' alt='homepage_image'></img>
-      {/* <Map mapClass={'homeMap'} center={address} items={[]} /> */}
       <div className='homeQuotes'>
         <h2 className='quote'>{quote}</h2>
         <h3 className='author'>{author}</h3>
