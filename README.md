@@ -1,6 +1,6 @@
 # Manna Foods Web App
 
-![](mannafoods.jpg)
+![](images/mannafoods.jpg)
 
 ## Project Description
 
@@ -8,7 +8,7 @@ This SPA [single page application] is a React / Flask app that allows businesses
 
 ## Usage: Signup [User or Business]
 
-![](signup.gif)
+![](images/signup.gif)
 
 1. Create a free account by using the login / signup form.
 2. On the login page, click 'signup' to toggle the signup form.
@@ -17,7 +17,7 @@ This SPA [single page application] is a React / Flask app that allows businesses
 
 ## Usage: Update Location [User or Business]
 
-![](updatelocation.gif)
+![](images/updatelocation.gif)
 
 1. Before you begin using Manna Foods, be sure to update your location.
 2. Navigate to the Account tab and simply enter your new location. This can be an address, zipcode, city, etc.
@@ -26,7 +26,7 @@ This SPA [single page application] is a React / Flask app that allows businesses
 
 ## Usage: Find and Save Listings [User Only]
 
-![](findandsave.gif)
+![](images/findandsave.gif)
 
 1. Navigate to the Find Listings tab to see all active listings.
 2. Filter / search for specific listings by keyword.
@@ -35,7 +35,7 @@ This SPA [single page application] is a React / Flask app that allows businesses
 
 ## Usage: Create and Edit Listings [Business Only]
 
-![](createedit.gif)
+![](images/createedit.gif)
 
 1. Navigate to the Create Listing tab to create a new listing.
 2. Fill in all the pertinent information. Be sure not to leave any details blank.
@@ -48,7 +48,7 @@ This SPA [single page application] is a React / Flask app that allows businesses
 
 ## Usage: Delete Account [User or Business]
 
-![](deleteacc.gif)
+![](images/deleteacc.gif)
 
 1. Navigate to your Account page.
 2. Click 'to Delete' to toggle the Delete form.

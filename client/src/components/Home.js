@@ -12,7 +12,7 @@ const Home = () => {
     <div className='container'>
       <Header title={title}/>
       <NavBar/>
-      <img className='homeImage' src='https://github.com/joeylee08/mannafoods/blob/main/athens.jpg?raw=true' alt='homepage_image'></img>
+      <img className='homeImage' src='https://github.com/joeylee08/mannafoods/blob/main/images/athens.jpg?raw=true' alt='homepage_image'></img>
       <UserInfo />
     </div>
   )
