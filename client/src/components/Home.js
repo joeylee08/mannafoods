@@ -26,12 +26,12 @@ const Home = () => {
     <div className='container'>
       <Header title={title}/>
       <NavBar/>
+      <UserInfo />
+      <img className='homeImage' src='https://github.com/joeylee08/mannafoods/blob/main/images/athens.jpg?raw=true' alt='homepage_image'></img>
       <div className='homeQuotes'>
         <h2 className='quote'>{quote}</h2>
         <h3 className='author'>{author}</h3>
       </div>
-      <img className='homeImage' src='https://github.com/joeylee08/mannafoods/blob/main/images/athens.jpg?raw=true' alt='homepage_image'></img>
-      <UserInfo />
     </div>
   )
 }
