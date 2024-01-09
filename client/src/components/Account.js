@@ -75,7 +75,7 @@ const Account = () => {
         .then(() => {
           fetch('/logout')
           .then(() => {
-            handleOpenSnack('Thank you for using Manna Foods.')
+            handleOpenSnack('Thank you.')
             setTimeout(() => {
               navigate('/')
               handleSetUser({})

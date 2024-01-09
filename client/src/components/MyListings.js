@@ -113,7 +113,9 @@ const MyListings = () => {
       <NavBar />
       {isModal ? <Modal currentSaved={myListings} selectedListing={selectedListing} handleIsModal={handleIsModal} handleOpenSnack={handleOpenSnack} handleDelete={handleDelete} fetchListings={fetchListings}/> : null}
       <div className='content'>
-        {mapped}
+        {
+          loginType === 'user' ? mapped.length > 0 ? mapped : <h1 className='noListings'>You have no saved listings.</h1> : mapped.length > 0 ? mapped : <h1 className='noListings'>You have no active listings.</h1>
+        }
       </div>
       {isSnack ? <Snackbar message={snackText} handleCloseSnack={handleCloseSnack} /> : null}
     </div>

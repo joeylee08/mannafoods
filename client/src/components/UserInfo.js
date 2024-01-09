@@ -6,14 +6,14 @@ const UserInfo = () => {
 
   if (loginType === 'user') {
     return (
-      <div className='homeDetails'>
+      <div className='userDetails'>
         <h1>{currentUser.username}</h1>
         <p>Member Since: {currentUser.created_at}</p>
       </div>
     )
   } else {
     return (
-      <div className='homeDetails'>
+      <div className='userDetails'>
         <h1>{currentUser.business_name}</h1>
         <p>Member Since: {currentUser.created_at}</p>
       </div>
