@@ -65,7 +65,5 @@ This SPA [single page application] is a React / Flask app that allows businesses
 Code written, tested, and submitted by Joseph Lee.
 
 Github: https://github.com/joeylee08
-
 Codepen: https://codepen.io/joeylee08
-
 LinkedIn: https://www.linkedin.com/in/joeylee08/
