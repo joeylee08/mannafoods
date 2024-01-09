@@ -6,39 +6,53 @@
 
 This SPA [single page application] is a React / Flask app that allows businesses, namely restaurants and grocers, to post listings of surplus food for users to come pick up at no cost. Individuals can create an account as either a user or business. Users can browse and save listings, while businesses can create and edit listings. Listings are location-based and can be filtered for specific keywords and preset dietary restrictions.
 
-## Installation
+## Usage: Signup [User or Business]
 
-1. Fork and clone this Github repository to your local environment.
-2. Open the file in your local code editor.
-3. CD into the main directory: phasefiveproject.
-4. CD into the /server directory and run the command `$ pipenv install ; pipenv shell` to install server dependencies.
-5. Run the command `$ export FLASK_RUN_PORT=5555` to ensure the server is running on the appropriate port.
-6. Verify that you are in the /server directory and run the command `$ flask run` to start your Flask server.
-7. CD into the main directory.
-8. CD into the /client directory and run the command `$ npm install` to install client dependencies.
-9. Verify that you are in the /client directory and run the command `$ npm start` to start your React server.
-10. The page should now be running at localhost:5555.
+![](signup.gif)
 
-## Usage: User
+1. Create a free account by using the login / signup form.
+2. On the login page, click 'signup' to access the signup form.
+3. Choose your account type [user or business].
+4. Enter the appropriate information and submit the form.
 
-1. Create a free account by using the signup form.
-2. Go to your Account tab and set your location to see nearby listings.
-3. Browse listings and save them to your My Listings page.
-4. Remove unwanted listings from your saved collection.
-5. You can modify your user information or delete your account under the Account page.
+## Usage: Update Location [User or Business]
 
-## Usage: Business
+![](updatelocation.gif)
 
-1. Create a free account by using the signup form.
-2. Go to your Account tab and set a default pickup location for your listings.
-3. Use your Create Listing page to post listings for your community.
-4. Be sure to include additional notes such as pickup times anc contact information.
-5. As items are picked up, remember to update the quantities accordingly.
-6. You can click on any listing card in Active Listings and edit its details.
-7. Do not post expired items, and please be honest about expiration dates.
-8. Once an item has been picked up, don't forget to delete the original listing.
-9. You can modify your user information or delete your account under the Account page.
+1. Before you begin using Manna Foods, make sure to update your location.
+2. Navigate to the Account tab and simply enter your new location.
+3. This will allow users to search for listings by distance.
+4. This also allows businesses to set a default pickup location.
 
+## Usage: Find and Save Listings [User Only]
+
+![](findandsave.gif)
+
+1. Navigate to the Find Listings tab to see active listings.
+2. Filter / search for listings by keyword.
+3. See listing details and save desired listings.
+4. Remove listings from your saved collection.
+
+## Usage: Create and Edit Listings [Business Only]
+
+![](createedit.gif)
+
+1. Navigate to the Create Listing tab to create a new listing.
+2. Fill in all the pertinent information.
+3. If you have already set your location, it will be autofilled.
+4. Be sure to update quantities and delete listings as items are picked up.
+5. Please be precise about expiration dates and dietary restrictions.
+6. Active listings can be viewed and edited in My Listings.
+7. Click Details to view the specifics of any active listing.
+8. Modify details, as desired. Click Edit to save changes.
+
+## Usage: Delete Account [User or Business]
+
+![](deleteacc.gif)
+
+1. Navigate to your Account page.
+2. Click 'to Delete' to open the Delete form.
+3. Confirm your username and password to delete your account.
 
 ## Notes on Environment Variables
 
@@ -48,6 +62,8 @@ This SPA [single page application] is a React / Flask app that allows businesses
 
 ## Credits
 
-Code written, tested, and submitted by Joseph L.
+Code written, tested, and submitted by Joseph Lee.
 
 Github: https://github.com/joeylee08
+Codepen: https://codepen.io/joeylee08
+LinkedIn: https://www.linkedin.com/in/joeylee08/
